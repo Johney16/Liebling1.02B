@@ -35,10 +35,22 @@ into the {body} of the default.hbs template --}}
   </section>
   
   
-         <div>
-            <h2>Hey 👋</h2>
-            <p>My name’s Dave. I’m a Web Designer and Front-end Developer based in Bristol, currently working at Ghost as Developer Advocate.</p>
-        </div>
+       <figure class="kg-card kg-code-card">
+
+    {{!-- Main --}}
+    <main id="index">
+        {{#page}}
+            <div>
+                <h2>{{title}}</h2>
+                {{content}}
+            </div>
+        {{/page}}
+    </main>
+
+<figcaption>Snippet from a custom home page template</figcaption>
+
+</figure>
+
     
     
     
