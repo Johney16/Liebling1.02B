@@ -18,11 +18,16 @@ This footer template is shared across all the pages.
       {{#if @site.twitter}}
         <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
           <span class="icon-twitter" aria-hidden="true"></span>
-        </a>
+      </a>
+      
+         
+      {{!--
       {{/if}}
       <a href="{{@site.url}}/rss" aria-label="RSS">
         <span class="icon-rss" aria-hidden="true"></span>
-      </a>
+      </a> 
+      --}}
+      
     </nav>
     <p class="m-footer-copyright">
       <span>{{@site.title}} &copy; {{date format="YYYY"}}</span>
